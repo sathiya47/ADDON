@@ -1,0 +1,32 @@
+package dsa;
+import java.util.Arrays;               //InsertionArray
+
+	public class InsertionArray {
+	    public static void main(String[] args) {
+	       
+	        int[] originalArray = {1, 2, 3, 4, 5, 6};
+	       
+	        int[] newArray = new int[originalArray.length + 2];
+	        
+	       
+	        newArray[0] = 777;
+	        
+	    
+	        for (int i = 0; i < 3; i++) {
+	            newArray[i + 1] = originalArray[i];
+	        }
+	        
+	        
+	        newArray[4] = 333;
+	        
+	        
+	        for (int i = 3; i < originalArray.length; i++) {
+	            newArray[i + 2] = originalArray[i];
+	        }
+	       
+	        System.out.println("Modified Array: " + Arrays.toString(newArray));
+	    }
+	}
+
+
+
